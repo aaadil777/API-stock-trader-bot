@@ -1,21 +1,39 @@
-# API Stock Trader Bot  
+# API Stock Trader Bot
 
-## Overview  
-The API Stock Trader Bot is a microservice-based stock trading application developed for the CS361 project. The bot allows users to manage their stock portfolio, retrieve stock data, and perform trades through a user-friendly interface.  
+A simple microservice-based stock trading bot for CS361. This app allows users to register, log in, retrieve stock prices, and manage a paper trading portfolio.
 
-## Features  
-- **Stock Data Retrieval**: Fetch real-time stock prices and data.  
-- **User Authentication**: Secure user login and registration.  
-- **Portfolio Management**: Users can view, add, and manage their stocks and investments.  
+## Features
 
-## Getting Started  
+- User registration and login
+- Real-time stock quotes using Alpha Vantage
+- Simulated stock buy/sell
+- Portfolio tracking
 
-### Prerequisites  
-- Python 3.x  
-- Dependencies specified in `requirements.txt`  
-- An API key from Alpha Vantage (or any other stock data provider)  
+## Setup Instructions
 
-### Installation  
-1. Clone the repository  
-   ```bash  
-   git clone https://github.com/your_username/API-stock-trader-bot.git
+1. Clone the repository:
+```bash
+git clone https://github.com/your_username/api-stock-trader-bot.git
+cd api-stock-trader-bot
+```
+
+2. Create a virtual environment and install dependencies:
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+3. Create a `.env` file in the root directory with your API key:
+```
+AV_KEY=your_alpha_vantage_api_key
+```
+
+4. Run the app:
+```bash
+python main.py
+```
+
+## License
+
+This project is licensed under the MIT License.
